@@ -100,7 +100,7 @@ export default function Dashboard({ data_send }) {
 }
 
 export const getServerSideProps = async () => {
-  const apiResponse = await fetch("https://c1wkon.deta.dev//get_dots/1/");
+  const apiResponse = await fetch("https://c1wkon.deta.dev/get_dots/1/");
 
   const data = await apiResponse.json();
 
