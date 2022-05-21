@@ -59,7 +59,11 @@ export default function Home({ list_machine_1 }) {
 }
 
 export const getServerSideProps = async () => {
+<<<<<<< HEAD
   const apiResponse = await fetch("https://c1wkon.deta.dev/create_machine/");
+=======
+  const apiResponse = await fetch("https://kyxyx7.deta.dev/create_machine/");
+>>>>>>> 6cd26d37d94fedc6c0c50f617456f325678f9917
   const list_machine = await apiResponse.json();
 
   return { props: { list_machine } };
