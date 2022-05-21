@@ -9,7 +9,7 @@ export default function Createmachine() {
   const [name_machine, setname_machine] = useState("");
   const [brand_machine, setbrand_machine] = useState("");
   const save_machine = () => {
-    fetch("https://fronteialore.vercel.app/api/create_machine/", {
+    fetch("https://c1wkon.deta.dev//api/create_machine/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
