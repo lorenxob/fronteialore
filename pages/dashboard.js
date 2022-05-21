@@ -48,9 +48,9 @@ export default function Dashboard({ data_send }) {
         setvoltage_val(note);
         console.log("voltaje", note);
       }
-      if (currentref.current === "") {
-        client.end();
-      }
+      // if (currentref.current === "") {
+      //   client.end();
+      // }
     });
   }, []);
   useEffect(() => {
