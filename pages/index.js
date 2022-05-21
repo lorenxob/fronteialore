@@ -8,7 +8,7 @@ import Header from "../components/Header";
 export default function Home({ list_machine_1 }) {
   const [list_machine, setlist_machine] = useState([]);
   const get_machine = () => {
-    fetch("http://127.0.0.1:8000/create_machine/", {
+    fetch("https://fronteialore.vercel.app/create_machine/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -59,7 +59,9 @@ export default function Home({ list_machine_1 }) {
 }
 
 export const getServerSideProps = async () => {
-  const apiResponse = await fetch("http://127.0.0.1:8000/create_machine/");
+  const apiResponse = await fetch(
+    "https://fronteialore.vercel.app/create_machine/"
+  );
   const list_machine = await apiResponse.json();
 
   return { props: { list_machine } };
