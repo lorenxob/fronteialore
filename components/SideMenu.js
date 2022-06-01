@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "../styles/SideMenu.module.css";
 
 import { BsPlusCircleFill, BsGraphUp } from "react-icons/bs";
-import { FaIndustry, FaHome } from "react-icons/fa";
+import { FaIndustry, FaHome, FaServer } from "react-icons/fa";
 import { useRouter } from "next/router";
 
 export default function SideMenu() {
@@ -26,6 +26,10 @@ export default function SideMenu() {
         className="icon_bar"
         onClick={() => router.push({ pathname: "/dashboard" })}
       ></BsGraphUp>
+      <FaServer
+        className="icon_bar"
+        onClick={() => router.push({ pathname: "/server" })}
+      ></FaServer>
     </div>
   );
 }

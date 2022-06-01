@@ -127,3 +127,45 @@
   justify-content: center;
   align-items: center;
 }
+
+/* estilos server */
+
+.chat_container{
+  width: 350px;
+  height: 450px;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.send_container{
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.message_container{
+  width: 100%;
+  height: 80%;
+  background-color: rgb(169, 169, 169);
+  border-radius: 10px;
+}
+
+.input_message{
+  width: 80%;
+  height: 95%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.button_send {
+  width: 20%;
+  height: 50px;
+  background-color: gray;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 10px;
+}

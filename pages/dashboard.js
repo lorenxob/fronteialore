@@ -29,7 +29,7 @@ export default function Dashboard({ data_send }) {
   useEffect(() => {
     console.log("data", data_send);
     var client = mqtt.connect("mqtt://smart.cloud.shiftr.io", options);
-    client.subscribe("Termofijadora01/fase3/#");
+    client.subscribe("Termofijadora01/fase1/#");
     var note;
 
     client.on("message", function (topic, message) {
